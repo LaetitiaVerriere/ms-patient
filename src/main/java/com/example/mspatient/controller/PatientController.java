@@ -28,7 +28,7 @@ public class PatientController {
         return this.patientService.findPatientById(id);
     }
 
-    @PostMapping
+    @PutMapping
     public void updatePatient(@RequestParam(name = "id") Integer id, @RequestBody Patient patient) {
         patientService.updatePatient(patient, id);
     }

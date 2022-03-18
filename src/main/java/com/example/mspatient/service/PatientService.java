@@ -38,14 +38,7 @@ public class PatientService {
     }
 
     public Patient updatePatient(Patient patient, Integer id) {
-        Patient patientUpdate = patientRepository.findById(id).get();
-        patientUpdate.setFirstname((patient.getFirstname()));
-        patientUpdate.setAddress((patient.getAddress()));
-        patientUpdate.setLastname(patient.getLastname());
-        patientUpdate.setBirthdate(patient.getBirthdate());
-        patientUpdate.setGender(patient.getGender());
-        patientUpdate.setPhone(patient.getPhone());
-
+        patient.setId(id);
         return patientRepository.save(patient);
     }
     public void deletePatient(Integer id){
