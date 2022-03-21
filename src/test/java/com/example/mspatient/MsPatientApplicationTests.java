@@ -9,5 +9,8 @@ class MsPatientApplicationTests {
 	@Test
 	void contextLoads() {
 	}
+	@Test
+	void createPatientTest(){
 
+	}
 }
