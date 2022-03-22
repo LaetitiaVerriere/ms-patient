@@ -29,13 +29,13 @@ public class Patient {
         private LocalDate birthdate;
 
     public Patient(Integer id, String firstname, String lastname, LocalDate birthdate, String gender, String address, String phone){
-        id = this.id;
-        firstname = this.firstname;
-        lastname = this.lastname;
-        birthdate = this.birthdate;
-        gender = this.gender;
-        address = this.address;
-        phone  =this.phone;
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.birthdate =birthdate;
+        this.gender =gender;
+        this.address = address;
+        this.phone  =phone;
     }
 
     public Patient() {
